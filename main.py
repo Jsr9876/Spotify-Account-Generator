@@ -88,7 +88,7 @@ def generate_email():
 def generate_username():
     with open("data/config.json") as file:
         data = json.load(file)
-        usernames = data['Username']
+        usernames = data['username']
         if usernames == "" or usernames == " ":
             username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=10))
             names = ["Radu loves Spotify", "yx1337 is cool", "radutool", "PussyKill", "Big fat cock", "h4ck3dr4du", "yx1337", "imagine genned", "spotifai", "cool gen - radu / yx", "yx is cool", "radu is cool", "very big cock", "fat cock", "penis", "pizda cu chapa"]
